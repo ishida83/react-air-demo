@@ -1,0 +1,13 @@
+.Footer {
+  position: fixed;
+  min-width: 100vw;
+  bottom: 0;
+  padding: 1rem 0;
+  .made-with {
+    color: white;
+    > .heart {
+      font-size: 18px;
+      color: #54bdb1;
+    }
+  }
+}

@@ -2,6 +2,7 @@
   "name": "react-air-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -41,7 +42,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:4000",
+  "proxy": "https://l94wc2001h.execute-api.ap-southeast-2.amazonaws.com/prod/fake-auth",
   "browserslist": {
     "production": [
       ">0.2%",
