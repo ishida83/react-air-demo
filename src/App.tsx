@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
 import Footer from './Footer';
 import Navbar from './Navbar';
+import Register from './Form';
 
 function App() {
+  const [isOpen, toggleOpen] = useState(false);
+  const close = useCallback(() => {
+    toggleOpen(false);
+  }, [])
   return (
     <div className="App">
       <Navbar />
@@ -22,7 +27,8 @@ function App() {
         <p>
           Be the first to know when we launch.
         </p>
-        <button className="button">Request an invite</button>
+        <button className="button" onClick={()=>toggleOpen(!isOpen)}>Request an invite</button>
+        {isOpen && <Register close={close}/>}
       </header>
 
       <Footer />
