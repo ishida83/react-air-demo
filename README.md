@@ -10,13 +10,13 @@ Open [https://localhost:3000](https://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-XHR requests made to `https://localhost:3000/api/` will proxy to `https://l94wc2001h.execute-api.ap-southeast-2.amazonaws.com/prod/fake-auth`.
+XHR requests made to `https://localhost:3000/` will proxy to `https://l94wc2001h.execute-api.ap-southeast-2.amazonaws.com/prod/fake-auth`.
 
 #### API Endpoints
 
 **Request**
 
-`POST /api/`
+`POST /`
 
 
 ```
